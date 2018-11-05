@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS的后代元素选择器</title>
+	<style>
+		span{
+			background-color: rebeccapurple;
+		}
+		
+		div span{
+			background-color: #718c00;
+		}
+		
+	</style>
+</head>
+<body>
+<p>现在考虑的是基于关系的选择器</p>
+<ul>
+	<li>
+		<p>A E:元素A的任一后代E</p>
+	</li>
+	<li>
+		<p>A > E:元素A的任一子代元素E</p>
+	</li>
+	<li>
+		<p>A + E:元素A的下一个兄弟元素E</p>
+	</li>
+</ul>
+<div>
+	<span>
+		span 1.
+		<span>
+			span 2.
+		</span>
+	</span>
+</div>
+<span>
+		span 3.
+</span>
+
+</body>
+</html>

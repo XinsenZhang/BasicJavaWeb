@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单元素</title>
+</head>
+<body>
+    <form action="https://www.baidu.com" method="get" enctype="UTF-8">
+        <input type="text"  maxlength="10" value="我是文本" />
+        <br />
+        <input type="password" value="20151002">
+        <br />
+        <input name="gender" checked type="radio" value="0">男
+        <input name="gender" type="radio" value="1">女
+        <br />
+        <input checked value="0" type="checkbox">电影
+        <input value="1" type="checkbox">音乐
+        <input value="2" type="checkbox">美术
+        <br />
+        <input type="button" value="我是按钮">
+        <br />
+        <input type="number">
+        <br />
+        <input type="date">
+        <br />
+        <input type="datetime-local">
+        <br />
+        <input type="color">
+        <br />
+        <input min="1" max="3" type="range">
+        <br />
+        <input type="email">
+        <input type="submit" value="自定义文本提交">
+        <br />
+        <input type="url">
+        <input type="submit">
+        <br />
+        <input type="file" multiple="multiple">
+    </form>
+    <form name="form_1">
+        <select name="" id="">
+            <option>苹果</option>
+            <option selected>草莓</option>
+            <option>鸭梨</option>
+        </select>
+        <br />
+        <style>
+            textarea{
+                resize: none;
+            }
+        </style>
+        <textarea rows="5" cols="10">我是一段测试文本</textarea>
+        <br />
+        <button type="submit" form="form_1">表格内可以有按钮</button>
+        <button type="reset">reset</button>
+    </form>
+
+</body>
+</html>

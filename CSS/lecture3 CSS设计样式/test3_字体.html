@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字体</title>
+	<style>
+		/*
+		设置自定义字体系列
+		*/
+		font-face{
+			font-family: "Source Han Sans";
+			src: url(font/KaiGenGothicCN-Light.eot);
+			src: url(font/KaiGenGothicCN-Light.eot?) format("embedded-opentype"),
+				 url(font/KaiGenGothicCN-Light.woff) format("woff"),
+				 url(font/KaiGenGothicCN-Light.ttf) format("truetype"),
+				 url(font/KaiGenGothicCN-Light.svg) format("svg");
+			font-weight: 400;
+			font-style: normal;
+		}
+		#p1{
+			font-family: "Times New Roman";
+		}
+		
+		#p2{
+			font-family: "Source Han Sans";
+		}
+		
+		#p3{
+			font-size: larger;
+			font-style: oblique;
+			font-weight: bolder;
+		}
+		
+	</style>
+</head>
+<body>
+<p id="p1">this is a text;</p>
+<p id="p2">这是又一个段落内容;</p>
+<p id="p3">这是一个段落内容;</p>
+</body>
+</html>
+
+
+

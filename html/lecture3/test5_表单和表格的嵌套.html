@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单和表格的嵌套使用</title>
+</head>
+<body>
+    <form name="regrister" action="https://www.sina.com" metdod="get">
+        <table>
+            <tr>
+                <td>用户名</td>
+                <td ><input type="text" value=""></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input type="radio" name="gender" value="1">男
+                    <input type="radio" name="gender" value="2">女
+                    <input type="radio" name="gender" value="3">保密
+                </td>
+            </tr>
+            <tr>
+                <td>兴趣爱好</td>
+                <td>
+                    <input type="checkbox">体育
+                    <input type="checkbox">美食
+                    <input type="checkbox">科技
+                    <input type="checkbox">其他
+                </td>
+            </tr>
+            <tr>
+                <td>性取向</td>
+                <td><select>
+                    <option selected> </option>
+                    <option>男</option>
+                    <option>女</option>
+                    <option>保密</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>安全邮箱</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <button type="reset">重置</button>
+                </td>
+                <td>
+                    <button type="submit">登陆</button>
+                </td>
+                <td>
+                    <a href="https://www.baidu.com">
+                        <button type="button">忘记密码</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

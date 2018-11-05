@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS的兄弟元素选择器</title>
+	
+	<style>
+		span {
+			background-color: #ff5573;
+		}
+		
+		div + span {
+			background-color: #009999;
+		}
+	</style>
+
+</head>
+<body>
+<div>
+	<span>
+		Span 1. in the div
+		<span>
+			Span 2. in the span that in the div
+		</span>
+	</span>
+</div>
+<span>
+	Span 3. in the span not in a div
+</span>
+</body>
+</html>

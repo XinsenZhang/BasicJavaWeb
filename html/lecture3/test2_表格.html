@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+<table border="1" cellspacing="0" cellpadding="10" align="center">
+    <tr>
+        <th>姓名</th>
+        <th>学号</th>
+        <th>性别</th>
+    </tr>
+    <tr>
+        <td>张鑫森</td>
+        <td>1510730115</td>
+        <td rowspan="2">男</td>
+    </tr>
+    <tr>
+        <td>CHENGG</td>
+        <td>1510735415</td>
+    </tr>
+    <tr align="center">
+        <td colspan="2">综合</td>
+    </tr>
+</table>
+
+<br />
+
+
+<!--另外一种完整的定义方式，不推荐-->
+<table>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>学号</th>
+        <th>总分</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>张鑫森</td>
+        <td>1510730115</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>小明</td>
+        <td>1510730111</td>
+        <td>100</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>200</td>
+    </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
