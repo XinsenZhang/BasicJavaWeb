@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS数据类型</title>
+</head>
+<body>
+<script type="text/javascript">
+	//var可以声明各种类型
+	var x;  //var可以定义一个undefined的类型
+	var y = 5;  //y is a number
+	var z = "John"; //  z is a string
+
+
+
+	//String
+	var carname = "Volvo XC60";
+
+	//number
+	var x1 = 10;
+	var x2 = 1.1;
+
+	//boolean
+	var x = true;
+	var y = false;
+
+	// array
+	// JS 的数组是动态变化的
+	var cars = new Array();
+	cars[0] = "Saab";
+
+	var cars = new  Array("Saab","Volvo","BMW");
+	var cars = ["Saab","Volvo","BMW"];
+    var a = new Array("hello");
+    //a[0] = "hello";
+    a[1] = 32;
+    a[2] = {name:"zhang",age:22};
+    a[3] = ["test",3232];
+    console.log(a);
+
+	//Javascrip 对象
+	var person = {firstname:"Jhon",Lastname:"Doe",id:5566};
+	//取值
+	person.firstname;
+	person["firstname"];
+
+	//undefined 指的是变量没有值
+	var  persons;
+	//可以通过赋值为null来清空变量
+	carname = null;
+
+</script>
+</body>
+</html>

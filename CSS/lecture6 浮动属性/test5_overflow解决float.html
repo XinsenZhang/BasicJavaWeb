@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>overflow解决float</title>
+	<style>
+		*{
+			padding: 0px;
+			margin-top: 0;
+			margin-bottom: 100px;
+		}
+		.parent{
+			width: 500px;
+			height: auto;
+			border: 1px #000000 solid;
+			zoom: 1;
+			overflow: hidden;
+		}
+		.test{
+			height: 120px;
+			width: 600px;
+			background-color: red;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+<div class="parent">
+	<div class="test"></div>
+	<div class="test"></div>
+	<div class="test"></div>
+	<div class="test"></div>
+	<div class="test"></div>
+	<div class="test"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS中的for循环和while循环</title>
+</head>
+<body>
+<script type="text/javascript">
+	// i 可以在循环初始化的时候声明
+	// i也能在循环体外声明
+	for(var i = 0;i < 10; i ++){
+	    var temp = i;
+	    console.log("i = " + i);
+	}
+	//for循环的i的生命周期
+	console.log("temp = " + temp);
+	console.log("i = " + i);
+
+
+	// for in
+	var person = {name:"Jason",
+		age:25,
+		height:170};
+
+	for(key in person){
+	    console.log(key + ":" + person[key])
+	}
+	count = 1;
+	while(count < 10){
+	    count ++;
+	    var temp = count;
+	    console.log("while执行了一次");
+	}
+	console.log(temp);
+
+</script>
+</body>
+</html>

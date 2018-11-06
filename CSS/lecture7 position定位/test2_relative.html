@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相对定位 </title>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+		.block:nth-child(2){
+			position: relative;
+			top: 10px;
+			left: 10px;
+			border: #4183c4 3px solid;
+		}
+		.block{
+			position: static;
+			width: 80px;
+			height:80px;
+			border: 2px black solid;
+			line-height: 80px;
+			text-align: center;
+			font-size: larger;
+			font-weight: bolder;
+			color: lightcoral;
+			float: left;
+		}
+		.block:nth-child(3){
+			position: relative;
+			top: 0px;
+			left: -160px;
+			width: 80px;
+			height: 60px;
+			border: red 5px solid;
+			text-align: center;
+			line-height: 60px;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+<div class="block">A</div>
+<div class="block">B</div>
+<div class="block">C</div>
+</body>
+</html>

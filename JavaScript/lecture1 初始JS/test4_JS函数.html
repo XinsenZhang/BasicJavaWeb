@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS函数</title>
+</head>
+<body>
+<script type="text/javascript">
+    // * 函数是由事件驱动的或者当他被调用时执行的可重复使用的代码块
+    // * function a(参数){} 声明会前置
+    // * var a = function(参数){}
+    // * 函数中的return
+
+
+	function a() {
+		console.log(1111);
+		console.log(2222);
+        console.log(3333);
+        console.log(4444);
+        console.log(5555);
+        console.log(6666);
+    }
+    a();
+	a();
+	console.log("现在函数a()被复用");
+
+	function b(param1, param2) {
+		console.log(param1,param2)
+    }
+
+    b("hello","world");
+
+	//匿名函数
+	var c = function (param1, param2, param3) {
+	    console.log(param1 ,param2, param3)
+		console.log("这是一个匿名函数")
+    }
+
+    c(21,432,1321);
+
+	function f() {
+		return "this is return function";
+    }
+
+    var result = f();
+	console.log(result)
+
+</script>
+</body>
+</html>

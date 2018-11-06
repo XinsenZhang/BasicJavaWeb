@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS页面布局 </title>
+	<link rel="stylesheet" href="css/format.css">
+</head>
+<!--从整体到部分，从左到右设计布局-->
+<body>
+<!--头部-->
+<div class="header">
+	<div class="logo">
+		<img src="image/logo.png" alt="">
+	</div>
+	<div class="nav">
+		<ul>
+			<li>首页</li>
+			<li>图片</li>
+			<li>视频</li>
+			<li>手记</li>
+		</ul>
+	</div>
+</div>
+<!--主体-->
+<div class="main">
+	<div class="top">
+		<img src="image/1.jpeg">
+		<!--遮罩层-->
+		<div class="layer"></div>
+		<!--内容层-->
+		<div class="layer-top">
+			<div class="word">MY BEAUTIFUL LIFE</div>
+			<button type="button">LOOK MORE></button>
+		</div>
+	</div>
+	<div class="middle">
+		<div class="m-top">
+			<div class="common microblog">
+				<img src="image/weibo.png">
+				<div class="social">MICROBLOG</div>
+			</div>
+			<div class="common wechat">
+				<img src="image/weixin.png">
+				<div class="social">WECHAT</div>
+			</div>
+			<div class="common QQ">
+				<img src="image/QQ.png">
+				<div class="social">QQ</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="m-middle">
+			"I want to give good things to record down,<br/>
+			after the recall will be very beautiful."
+		</div>
+		<div class="m-bottom">
+			<div class="galary">
+				<img src="image/03-01.jpg">
+				<div class="attr">
+					<div class="type">
+						Cool Image
+					</div>
+					<div class="action">
+						Record The Picture
+					</div>
+				</div>
+			</div>
+			<div class="galary">
+				<img src="image/03-02.jpg">
+				<div class="attr">
+					<div class="type">
+						Great Picture
+					</div>
+					<div class="action">
+						Record The Picture
+					</div>
+				</div>
+			</div>
+			<div class="galary">
+				<img src="image/03-03.jpg">
+				<div class="attr">
+					<div class="type">
+						Cool Image
+					</div>
+					<div class="action">
+						Record The Picture
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="bottom">
+		<div class="content">
+			<div class="title">FROM THE PHOTO ALBUM</div>
+			<dl>
+				<dt>
+					<img src="image/04-01.jpg">
+				</dt>
+				<dd>
+					Life is like a book, just read more and more refined, more write more carefully. When read, mind open, all things have been indifferent to heart. Life is the precipitation.
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<img src="image/04-02.jpg">
+				</dt>
+				<dd>
+					Life is like a cup of tea, let people lead a person to endless aftertastes. You again good taste, it will always have a different taste, different people will have different taste more.
+				</dd>
+			</dl>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+<!--<div class="clear"></div>-->
+<!--底部-->
+<div class="clear"></div>
+<div class="footer">
+	© 2018 imooc.com 京ICP备13046642号
+</div>
+</body>
+</html>

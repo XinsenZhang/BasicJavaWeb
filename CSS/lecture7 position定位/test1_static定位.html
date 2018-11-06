@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>static定位</title>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+		.block{
+			text-align: center;
+			height: 100px;
+			width: 100px;
+			line-height: 100px;
+			border: #0086b3 1px solid;
+
+			position: relative;
+			top: 10px;
+		}
+		.block:nth-child(2){
+			background-color: #990000;
+			margin: 5px;
+			position: static;
+		}
+
+		.block:nth-child(3){
+			background-color: #718c00;
+			margin: 20px;
+			position: static;
+		}
+
+		.block:nth-child(4){
+			background-color: #a6d796;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	</style>
+</head>
+<body>
+<div class="block">A</div>
+<div class="block">B</div>
+<div class="block">C</div>
+<div class="block">D</div>
+</body>
+</html>

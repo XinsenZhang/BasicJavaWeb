@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fixed position</title>
+	<link rel="stylesheet" href="./reset.css">
+	<style>
+		body{
+			height: 2000px;
+			width: 100%;
+			background-color: #0086b3;
+		}
+
+		.block:nth-child(1){
+			width: 100px;
+			height: 100px;
+			top: 200px;
+			left: 200px;
+			line-height: 100px;
+			text-align: center;
+			border: black 2px solid;
+			position: absolute;
+		}
+
+		.block:nth-child(2){
+			width: 100px;
+			height: 100px;
+			top: 200px;
+			left: 200px;
+			line-height: 100px;
+			text-align: center;
+			border: black 2px solid;
+			position: fixed;
+		}
+
+		.parent{
+			width: 200px;
+			height: 200px;
+			left: 500px;
+			top: 500px;
+			position: relative;
+			line-height: 200px;
+			text-align: center;
+			vertical-align: middle;
+			background-color: red;
+		}
+
+		.child{
+			width: 100px;
+			height: 100px;
+			position: fixed;
+			top: 10px;
+			left: 10px;
+			line-height: 100px;
+			text-align: center;
+			background-color: #a6d796;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="block">绝对定位</div>
+<div class="block">固定定位</div>
+
+<div class="parent">
+	父元素
+	<div class="child">
+		子元素
+	</div>
+</div>
+</body>
+</html>
